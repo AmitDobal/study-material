@@ -1,4 +1,4 @@
-package java_learning.lld.design_patterns.chain_of_responsibility.log;
+package java_learning.lld.design_patterns.behavioral.chain_of_responsibility.log_v2;
 
 public class MainLog {
 
@@ -10,10 +10,10 @@ public class MainLog {
         LogHandler infoLogHandler = new InfoLogHandler(LogType.INFO, errorLogHandler);
         LogHandler logger = new DebugLogHandler(LogType.DEBUG, infoLogHandler);
 
-        logger.log(LogType.INFO, "This is a INFO message");
-        logger.log(LogType.DEBUG, "This is a DEBUG message");
-        logger.log(LogType.FATAL, "This is a FATAL message");
-        logger.log(LogType.INFO, "This is a info message");
+        logger.info("This is a INFO message");
+        logger.debug("This is a DEBUG message");
+        logger.fatal("This is a FATAL message");
+        logger.info("This is a info message");
 
     }
 }

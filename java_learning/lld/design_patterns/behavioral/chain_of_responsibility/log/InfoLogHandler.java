@@ -1,4 +1,4 @@
-package java_learning.lld.design_patterns.chain_of_responsibility.log_v2;
+package java_learning.lld.design_patterns.behavioral.chain_of_responsibility.log;
 
 public class InfoLogHandler extends LogHandler {
 
