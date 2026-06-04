@@ -1,0 +1,50 @@
+Flows: 
+    1. Entry Flow
+        Vehicle will arrive. Generate a ticket. Assign a parking slot and floor.
+    2. Exit Flow
+        Calculate the fee. do payment. Update the parking slot. Generate the reciept. mark the ticket inActive.
+    3. Admin Flow
+        CRUD operations related to - Parking Slots, Payments etc
+
+
+Implementations
+
+1. Entities
+    1. Vehicle
+    2. ParkingSlot
+    3. Floor
+    4. Ticket
+    5. Receipt
+    6. Payment
+    7. Pricingrule
+
+2. DTO
+    1. EntryResponseDTO
+    2. ExitResponseDTO
+
+3. Repositories
+    1. VehicleRepository
+    2. ParkingSlotRepository
+    3. FloorRepository
+    4. TicketRepository
+    5. ReceiptRepository
+    6. PaymentRepository
+    7. PricingRuleRepository
+
+4. Services
+    1. SlotService
+    2. PricingService
+    3. PaymentService
+    4. AdminService
+    5. TicketService
+
+5. Controller
+    1. EntryController
+    2. ExitController
+    3. AdminController
+
+More
+ PaymentStrategy
+ PricingRuleStrategy
+
+ PaymentGatewayAdaptor
